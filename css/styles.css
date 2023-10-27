@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.mobile-image {
+    display: none;
+}
+
+/* Fix this later: */
+.arrow-down {
+    display: none;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav {
+    margin-right: 40px;
+}
+
+.logo {
+    margin-left: 40px;
+    margin-right: 60px;
+    margin-top: 24px;
+}
+
+.dropbtn, .nav-button, .login-button {
+    background-color: #FFF;
+    color: black;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .register-button {
+    background-color: #FFF;
+    color: black;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid black;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 40px;
+  }
+  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+  }
+  
+  .dropdown-content a {
+    color: #686868;
+    text-decoration: none;
+    display: block;
+    padding-top: 24px;
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  .dropdown-content img {
+      padding-right: 15px;
+  }
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-image img {
+    height: 640px;
+    width: 480px;
+    margin-top: 130px;
+    margin-left: 125px;
+}
+
+.content-text {
+    width: 540px;
+    height: 400px;
+    margin-top: 234px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.body-text {
+    font-size: 18px;
+    line-height: 28px;
+    width: 445px;
+}
+
+.learn-button {
+    border: none;
+    background-color: black;
+    color: #FFF;
+    width: 163px;
+    height: 56px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.gray-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    gap: 40px;
+    height: 36px;
+    margin-top: 108px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #686868;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .the-website {
+        width: 375px;
+        height: 780px;
+        background-color: white;
+    }
+
+    nav, .right-nav {
+        display: none;
+    }
+
+    .left-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 75px;
+        width: 343px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        margin-top: 75px;
+    }
+
+    .mobile-image img {
+        width: 375px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .body-text {
+        line-height: 28px;
+        width: 343px;
+        height: 78px;
+        text-align: center;
+        font-size: 16px;
+        color: #686868;
+    }
+
+    .content-text {
+        margin-top: 0px;
+        display: flex;
+        flex: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .learn-button {
+        border: none;
+        background-color: black;
+        color: #FFF;
+        width: 136px;
+        height: 48px;
+        border-radius: 15px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+        margin-top: 24px;
+        cursor: pointer;
+    }
+
+    .gray-logos {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 343px;
+        height: 26px;
+        margin-top: -100px;
+        margin-bottom: 94px;
+    }
+
+    .gray-logos img {
+        max-width: 81px;
+    }
+
+    .maker {
+        height: 17.34px;
+    }
+
+    .meet {
+        height: 14.36px;
+    }
+
+    .audio {
+        height: 26px;
+    }
+
+    .databiz {
+        height: 14.36px;
+    }
+  }
