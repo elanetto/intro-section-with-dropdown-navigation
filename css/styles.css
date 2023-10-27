@@ -37,6 +37,10 @@ nav {
     align-items: center;
 }
 
+.right-nav {
+    margin-right: 40px;
+}
+
 .logo {
     margin-left: 40px;
     margin-right: 60px;
@@ -110,6 +114,7 @@ main {
     align-items: center;
 }
 
+
 .main-image img {
     height: 640px;
     width: 480px;
@@ -181,10 +186,17 @@ main {
         display: none;
     }
 
+    .left-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 75px;
+        width: 343px;
+    }
+
     .hamburger-menu {
         display: block;
         margin-right: 16px;
-        margin-top: 25px;
         cursor: pointer;
     }
 
@@ -264,7 +276,7 @@ main {
 
     .gray-logos {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         width: 343px;
         height: 26px;
@@ -276,20 +288,18 @@ main {
         max-width: 81px;
     }
 
-    .logo {
-        width: 87px;
-        height: 35px;
-    }
-
     .maker {
         height: 17.34px;
     }
+
     .meet {
         height: 14.36px;
     }
+
     .audio {
         height: 26px;
     }
+
     .databiz {
         height: 14.36px;
     }
